@@ -1,0 +1,11 @@
+<%-include("partials/header"); -%>
+<div class="jumbotron pt-3">
+  <div class="container">
+    <h1 class="display-3 text-center pb-2"><%=title %></h1>
+    <p class="pb-4"><%=content %></p>
+    <form action="/post/<%= title %>" method="post" class="text-center"> 
+      <button class="btn btn-primary btn-lg" type="submit">Delete</button>
+    </form>
+  </div>
+</div>
+<%-include("partials/footer"); -%>
